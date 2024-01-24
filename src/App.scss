@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+:is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  padding: 0;
+}
+.main_crm_section {
+  .sidebar_section {
+    max-width: 250px;
+    height: 100vh;
+    background-color: #000;
+    float: left;
+    width: 100%;
+    h2 {
+      text-align: center;
+      padding: 20px 0;
+      cursor: pointer;
+      color: #ffffffa6;
+    }
+    ul {
+      li {
+        width: 95%;
+        a {
+          padding: 10px 0 10px 10px;
+          text-decoration: none;
+          font-weight: 700;
+          display: block;
+          color: #fff;
+          &.active {
+            background-color: #fff;
+            color: #000;
+            border-radius: 0 30px 30px 0;
+          }
+        }
+      }
+    }
+  }
+  .content_wraper {
+    width: calc(100% - 260px);
+    float: right;
+    height: 100vh;
+    overflow: auto;
+  }
+}
+.movie_section {
+  padding: 10px;
+  .form_control {
+    label {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    input {
+      display: block;
+      padding: 8px;
+      max-width: 250px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      border: 2px solid black;
+    }
+    .chackbox_lang {
+      display: flex;
+      flex-wrap: wrap;
+      .chackbox_lang_content {
+        display: flex;
+        margin: 2px 15px 2px 0;
+        input[type="checkbox"] {
+          width: auto;
+          width: 18px;
+          height: 18px;
+        }
+        label {
+          font-size: 12px;
+          display: contents;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid black;
+      resize: none;
+      height: 50px;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 10px;
+    }
+  }
+  .btn_add {
+    margin: 30px 0;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    font-weight: 600;
+    &:hover {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+.content_table {
+  max-width: 100%;
+  width: 100%;
+  tr {
+    th,
+    td {
+      border: 1px solid black;
+    }
+  }
+}
+
+.save_btn {
+  text-align: center;
+  button {
+    margin: 30px 0;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    font-weight: 600;
+    font-size: 15px;
+    &:hover {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+.table_img {
+  img {
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+  }
+}
+.table_set{
+  display: flex;
+  justify-content: center;
+  table{
+    margin: 10px 0;
+    max-width: 95%;
+    width: 100%;
+    tr{
+      td{
+        padding: 5px;
+      }
+      td:first-child{
+        text-align: center;
+      }
+    }
+  }
+}
+.form_control{
+  input{
+    display: block;
+  }
+}
+.text-danger{
+  color: red;
+  font-size: 13px;
+}
